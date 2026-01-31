@@ -1,0 +1,425 @@
+/* BODY CONFIGURATIONS */
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(https://images.unsplash.com/photo-1517856713891-215e57a13c0d?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* NAVIGATION BAR AND LINKS TO OTHER PAGES */
+.logo{
+    font-family: Lexend Deca;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+}
+.nav-bar {
+    display: flex;
+    top: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding:  6px 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    top: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 45, 80);
+    font-family: Lexend Deca;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    border-radius: 70px;
+    padding: 3px 10px;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/* CONTAINERS AND CARDS */
+.container1{
+    display: grid;
+    grid-row: inherit;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+}
+
+.card{
+    top: 50vw;
+    left: 50vw;
+    width: 500px;
+    margin-top: 30px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(255, 95, 95);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.3), 
+        0 6px 6px rgba(0, 0, 0, 0.2),
+        0 0 100px rgba(255, 45, 80, 0.2); 
+}
+
+/* INSIDE THE CARD */
+.title{
+    font-family: Lexend Deca;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    left: 50vh;
+}
+
+.decisionNotice{
+    text-align: center;
+    font-family: google sans;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.viewDecision{
+    padding: 10px 20px;
+    font-size: 23px;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 70px;
+    font-family: Schoolbell;
+    transition: 0.4s ease-in-out;
+}
+
+.viewDecision:hover{
+    background-color: black;
+    color: white;
+    transform: scaleX(1.02);
+}
+
+/* ADMISSION LETTER CSS */
+.letter-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background: #fdf2f4;
+    
+}
+
+/* Back Button Styling */
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #ff2d50;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.letter-paper {
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh; /* Keeps it inside the screen height */
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    overflow-y: none; /* Allows internal scroll only if text is huge */
+    transform: scale(0.9); /* Shinks everything to 90% */
+    transform-origin: center; /* Ensures it stays centered while shrinking */
+}
+
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows her to click things through the confetti */
+}
+
+/* Letter Paper Styling */
+.letter-paper {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 4px; /* Real paper usually has sharper corners */
+    border-top: 15px solid #ff2d50;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 600px;
+    text-align: left;
+}
+
+.letter-title {
+    font-family: 'Anton', sans-serif;
+    color: #f14343; /* Formal Navy */
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.salutation {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.main-text {
+    font-family: google sans;
+    line-height: 1.6;
+    color: #444;
+}
+
+.uni-name {
+    color: #ff2d50;
+    font-weight: bold;
+}
+
+/* The Romantic Part */
+.proposal-section {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 45, 80, 0.05); /* Very light pink tint */
+    border-radius: 10px;
+}
+
+.main-question {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #ff2d50;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    color: #888;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Enrollment Buttons */
+.enrollment-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.call-to-action {
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.enroll-btn {
+    background: #ff2d50;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enroll-btn:hover {
+    background: #000;
+    transform: scale(1.1);
+}
+.decline-btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-width: 0px;
+    border-radius: 50px;
+    padding: 5px;
+    transition: 0.67s ease-in-out;
+}
+.decline-btn:hover{
+    color: transparent;
+    background-color: transparent;
+}
+
+/* FINANCIAL AID */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.financial-card {
+    display: block;
+    margin-top: 10px;
+    background: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-left: 10px solid #ff2d50; /* University brand color */
+    font-family: 'Lexend Deca', sans-serif;
+    transform: scale(0.8);
+}
+
+.award-header {
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.award-header h2 {
+    color: #1a237e;
+    font-size: 22px;
+    margin: 0;
+}
+
+.need-met-box {
+    background: #fff0f3;
+    border: 2px dashed #ff2d50;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.percentage {
+    font-size: 48px;
+    font-family: 'Anton', sans-serif;
+    color: #ff2d50;
+    display: block;
+}
+
+.award-details {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.total {
+    font-weight: bold;
+    color: #1a237e;
+    font-size: 16px;
+}
+
+.price {
+    color: #2e7d32; /* Green for financial "savings" */
+    font-weight: bold;
+}
+
+.award-footer {
+    font-size: 11px;
+    color: #888;
+    font-style: italic;
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+/* ASKING PICTURES */
+.gallery-container {
+    min-height: 100vh;
+    width: 100%;
+    background: #fdf2f4;
+    padding: 100px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.9); /* Your 90% zoom preference */
+}
+
+.gallery-title {
+    font-family: 'Anton', sans-serif;
+    color: #ff2d50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Polaroid Styling */
+.polaroid {
+    background: white;
+    padding: 15px 15px 60px 15px; /* Extra bottom padding for the polaroid look */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden; /* Important for the hover effect */
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Keeps photos from looking stretched */
+}
+
+.polaroid:hover {
+    transform: rotate(-2deg) scale(1.05); /* Slight tilt on hover */
+    z-index: 5;
+}
+
+/* Hover Caption Logic */
+.caption {
+    position: absolute;
+    bottom: -100%; /* Start hidden off-screen */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 45, 80, 0.9); /* Red overlay to match theme */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    transition: bottom 0.4s ease-in-out;
+    
+    text-align: center;
+}
+
+.polaroid:hover .caption {
+    bottom: 0; /* Slide up to cover the image */
+    margin-right: 50px;
+}
+
+.caption h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 10px;
+}
+
+.caption p {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.1rem;
+}
