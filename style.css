@@ -7,6 +7,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    transition: 0.2s ease-in-out;
+}
+@keyframes fadeIn {
+    from: Opa
+    
 }
 
 /* NAVIGATION BAR AND LINKS TO OTHER PAGES */
@@ -423,3 +428,4 @@ body{
     font-family: 'Schoolbell', cursive;
     font-size: 1.1rem;
 }
+
