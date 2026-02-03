@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const decisionBtn = document.querySelector(".viewDecision");
     if (decisionBtn) {
         decisionBtn.addEventListener("click", function() {
-            decisionBtn.innerText = "DEEP BREATHE...";
+            decisionBtn.innerText = "DEEP BREATH...";
             setTimeout(() => {
                 window.location.href = "letter.html"; 
             }, 1200);
